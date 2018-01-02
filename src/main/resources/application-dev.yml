@@ -1,0 +1,10 @@
+application.ymlserver:
+  port: 8080
+  ##context-path: /gril
+cupSize: B
+age: 18
+content: "cupSize: ${cupSize},age:${age}"
+
+girl:
+  cupSize: B
+  age: 20

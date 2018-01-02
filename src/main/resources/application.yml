@@ -1,0 +1,24 @@
+#server:
+#  port: 8080
+#  ##context-path: /gril
+#cupSize: B
+#age: 18
+#content: "cupSize: ${cupSize},age:${age}"
+#
+#girl:
+#  cupSize: B
+#  age: 20
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dbgirl?user=root&password=0104&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false
+#    username: root
+#    password: 0104
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
